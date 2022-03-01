@@ -1,0 +1,7 @@
+- Escolhas binarias, em que obriga o jogador a pesquisar mais sobre o assunto
+- Esoclhas com dupla consequencia, resultando em macanicas diferentes ao longo do jogo
+- Jogo em modo campanha, em que possibilita o jogador a explorar o mapa e interragir com NPCs
+- Jogo estilo RPG com escolhas embutidas
+- Tela de inicio, personagens criados com o titulo so jogo, alem do botao start e load game
+- Ambientes com carater politico e educativo
+- Jogo mostrata uma carera politica, mostrando a creccente de um politico, de vereador a presidente

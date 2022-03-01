@@ -1,0 +1,81 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://scripts/nivel/nivel_jogo.gd" type="Script" id=1]
+[ext_resource path="res://resource/db/db_jogo_perguntas.tres" type="Resource" id=2]
+[ext_resource path="res://sprites/senado.jpeg" type="Texture" id=3]
+
+[node name="nivel_jogo" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -1024.0
+margin_bottom = -600.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+db_perguntas = ExtResource( 2 )
+color_right = Color( 0.196078, 1, 0, 1 )
+color_wrong = Color( 1, 0, 0, 1 )
+
+[node name="Senado" type="Sprite" parent="."]
+position = Vector2( 490, 321 )
+texture = ExtResource( 3 )
+
+[node name="informacao_pergunta" type="VBoxContainer" parent="."]
+margin_left = 12.0
+margin_top = 16.0
+margin_right = 1009.0
+margin_bottom = 268.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="texto_pergunta" type="Label" parent="informacao_pergunta"]
+margin_right = 997.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 997, 100 )
+size_flags_vertical = 6
+
+[node name="Panel" type="Panel" parent="informacao_pergunta"]
+margin_top = 104.0
+margin_right = 997.0
+margin_bottom = 304.0
+rect_min_size = Vector2( 0, 200 )
+
+[node name="imagem_pergunta" type="TextureRect" parent="informacao_pergunta/Panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+expand = true
+stretch_mode = 6
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="video_pergunta" type="VideoPlayer" parent="informacao_pergunta/Panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="audio_pergunta" type="AudioStreamPlayer" parent="informacao_pergunta/Panel"]
+
+[node name="resposta" type="VBoxContainer" parent="."]
+margin_left = 17.0
+margin_top = 342.0
+margin_right = 1001.0
+margin_bottom = 581.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="opcao1" type="Button" parent="resposta"]
+margin_right = 984.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 0, 100 )
+
+[node name="opcao2" type="Button" parent="resposta"]
+margin_top = 104.0
+margin_right = 984.0
+margin_bottom = 204.0
+rect_min_size = Vector2( 0, 100 )
