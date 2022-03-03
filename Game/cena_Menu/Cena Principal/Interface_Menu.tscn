@@ -1,0 +1,163 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://cena_Menu/Cena Principal/Images/EU_PRESIDENTE_LOGO_TXTBOX.png" type="Texture" id=1]
+[ext_resource path="res://cena_Menu/Cena Principal/Font/Montserrat-ExtraBold.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://cena_Menu/Cena Principal/Buttons/iniciar_Botao.gd" type="Script" id=4]
+[ext_resource path="res://cena_Menu/Cena Principal/Buttons/carregar_Botao.gd" type="Script" id=5]
+[ext_resource path="res://cena_Menu/Cena Principal/Buttons/opcoes_Botao.gd" type="Script" id=6]
+[ext_resource path="res://cena_Menu/Cena Principal/Buttons/sair_Botao.gd" type="Script" id=7]
+[ext_resource path="res://cena_Menu/Cena Principal/interface_Menu.gd" type="Script" id=8]
+
+[sub_resource type="DynamicFont" id=1]
+size = 48
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 24
+font_data = ExtResource( 2 )
+
+[node name="interface_Menu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( -658, 106 )
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Menu" type="VBoxContainer" parent="."]
+margin_left = 120.0
+margin_top = 80.0
+margin_right = 1160.0
+margin_bottom = 640.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Logo" type="TextureRect" parent="Menu"]
+margin_right = 1040.0
+margin_bottom = 128.0
+texture = ExtResource( 1 )
+stretch_mode = 4
+
+[node name="CenterRow" type="HBoxContainer" parent="Menu"]
+margin_top = 132.0
+margin_right = 1040.0
+margin_bottom = 560.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Botoes" type="VBoxContainer" parent="Menu/CenterRow"]
+margin_right = 1040.0
+margin_bottom = 428.0
+rect_pivot_offset = Vector2( -843, 0 )
+size_flags_horizontal = 3
+custom_constants/separation = 20
+alignment = 1
+
+[node name="iniciar_Botao" type="Button" parent="Menu/CenterRow/Botoes"]
+margin_top = 64.0
+margin_right = 1040.0
+margin_bottom = 124.0
+rect_min_size = Vector2( 360, 60 )
+flat = true
+script = ExtResource( 4 )
+scene_to_load = "res://mundo-aberto.tscn"
+
+[node name="start_Label" type="Label" parent="Menu/CenterRow/Botoes/iniciar_Botao"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+size_flags_horizontal = 0
+custom_colors/font_color_shadow = Color( 1, 0.592157, 0, 1 )
+custom_constants/shadow_offset_x = 0
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 1 )
+text = "Novo jogo "
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="carregar_Botao" type="Button" parent="Menu/CenterRow/Botoes"]
+margin_top = 144.0
+margin_right = 1040.0
+margin_bottom = 204.0
+rect_min_size = Vector2( 360, 60 )
+flat = true
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+scene_to_load = "res://CENA_TESTE/CENA_TESTE.tscn"
+
+[node name="load_Label" type="Label" parent="Menu/CenterRow/Botoes/carregar_Botao"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+size_flags_horizontal = 0
+custom_colors/font_color_shadow = Color( 1, 0.592157, 0, 1 )
+custom_constants/shadow_offset_x = 0
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 1 )
+text = "Carregar jogo "
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="opcoes_Botao" type="Button" parent="Menu/CenterRow/Botoes"]
+margin_top = 224.0
+margin_right = 1040.0
+margin_bottom = 284.0
+rect_min_size = Vector2( 360, 60 )
+flat = true
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+scene_to_load = "res://CENA_TESTE/CENA_TESTE.tscn"
+
+[node name="options_Label" type="Label" parent="Menu/CenterRow/Botoes/opcoes_Botao"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+size_flags_horizontal = 0
+custom_colors/font_color_shadow = Color( 1, 0.592157, 0, 1 )
+custom_constants/shadow_offset_x = 0
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 1 )
+text = "Opções "
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="sair_Botao" type="Button" parent="Menu/CenterRow/Botoes"]
+margin_top = 304.0
+margin_right = 1040.0
+margin_bottom = 364.0
+rect_min_size = Vector2( 360, 60 )
+flat = true
+script = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+scene_to_load = "res://CENA_TESTE/CENA_TESTE.tscn"
+
+[node name="exit_Label" type="Label" parent="Menu/CenterRow/Botoes/sair_Botao"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_rotation = 0.0786569
+size_flags_horizontal = 0
+custom_colors/font_color_shadow = Color( 0.941176, 0.0470588, 0.0470588, 1 )
+custom_constants/shadow_offset_x = 0
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = SubResource( 1 )
+text = "Sair "
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="version_Label" type="Label" parent="."]
+margin_left = 120.0
+margin_top = 626.0
+margin_right = 1160.0
+margin_bottom = 640.0
+custom_fonts/font = SubResource( 2 )
+text = "Version 1.2 
+By Inteligados "

@@ -5,8 +5,8 @@
 
 [resource]
 script = ExtResource( 1 )
-Informacao_Pergunta = "Qual a fruta mais gostosa da estação?"
+Informacao_Pergunta = "A mecanização das lavouras no sul, está ocasionando uma crescente no nível de desemprego, resultando na migração para outros estados brasileiros e o surgimento de boias-frias. Esses trabalhadores rurais sem-terra são tratados de forma exploratória, com baixos salários, péssimas condições de saúde e moradia. Embora os boias-frias não estejam restritos apenas à Região Sul do Brasil, o estado do Paraná é a unidade federativa com o maior número de pessoas nessas condições."
 type = 3
 audio_pergunta = ExtResource( 2 )
-opcoes = [ "Maçã", "Melancia" ]
-correct = "Maçã"
+opcoes = [ "Implementação de cursos profissionalizantes aos trabalhadores, em colaboração a campanha de alfabetização para trabalhadores agrícolas.", "Subsídio do governo à trabalhadores qualificados de outras regiões/ países migrarem para a região sul para trabalharem." ]
+correct = "Subsídio do governo à trabalhadores qualificados de outras regiões/ países migrarem para a região sul para trabalharem."

@@ -9,6 +9,7 @@ export(Resource) var db_perguntas
 export(Color) var color_right
 export(Color) var color_wrong
 
+
 var buttons := []
 var index := 0
 
