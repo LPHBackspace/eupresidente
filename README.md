@@ -1,12 +1,10 @@
-## site_curriculo
+## Eu presidente
 
-Site desenvolvido com:
-- Css
-- Html
-- JavaScript
+Jogo desenvolvido com:
+Godot
 
 
-<a href="https://lphbackspace.github.io/site_curriculo/public/index.html">Visualizar site</a>
+<a href="https://lph-backspace.itch.io/eupresidente2">Visualizar site</a>
 
 
 <!-- <img align="right" alt="Leo-Jotaro-GIF" src="#"> -->
